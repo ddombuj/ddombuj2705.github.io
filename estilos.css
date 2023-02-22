@@ -223,45 +223,12 @@ nav a:active, a:hover, a:focus{
     nav ul li a:hover, li a.active{
         background: none;
     }
-    /*posicionamiento de cada submenu*/
-    /*Submenú*/
-    nav ul li ul{
-        position: absolute;
-        display: block;
-        width: 80%;
-        height: 300px;
-        min-width: 150px;
-        margin-left: 95%;
-        margin-top: -180px;
-        border: 3px solid green;
-    }
-    #submenu2{
-        margin-top: -180px;
-    }
-    #submenu3{
-        margin-top: -190px;
-    }
-    #submenu4{
-        margin-top: -275px;
-    }
+    /*Submenú Ocultar*/
     nav ul li ul li{
-        display: inline-block;
-        position: relative;
-        margin: 20px 0;
-        padding: 0;
+        display: none;
     }
     #check:checked ~ ul{
         display: none;
-    }
-    /*Ultimo detalle que el submenu no sobresalga*/
-    @media (max-width: 500px){
-        nav ul li ul{
-            min-width: 0px;
-        }
-        nav ul li ul li a{
-            font-size: 17px;
-            width: 120px;
-        }
     }
 }
 
