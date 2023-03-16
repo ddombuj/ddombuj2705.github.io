@@ -1,0 +1,756 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/**
+    -Hay que hacer dos veriones del media, tablet y movil, ajustando el nav en tablet para que la fuente disminuya pero no se forme la hamburguesa.
+**/
+body{
+    /*Esta propiedad debe de eliminarse*/
+    overflow-x: hidden;
+    min-width: 360px;
+}
+/******************** LAYOUT/PLANTILLA HEADER/NAV ********************/
+/*** Display/Position/Float ***/
+header{
+    position: relative;
+}
+
+#logo{
+    left: 0;
+}
+nav{
+    text-align: center;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+nav ul{
+    top: 5px;
+}
+nav ul li{
+    display: inline-block;
+    right: 15px;
+    left: 15px;
+    top: 8px;
+}
+nav a{
+    display: block;
+}
+/*** Height/Width/Padding/Border/Margin ***/
+/** Header/Nav **/
+header{
+    height: 580px;
+    position: relative;
+}
+
+#logo{
+    position: absolute;
+    height: auto;
+    width: 175px;
+    transition: .5s;
+}
+header a img{
+    height: auto;
+    width: 40px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+header a:hover img{
+    width: 3%;
+    height: auto;
+}
+#compra{
+    margin-right: 3%;
+}
+@media (max-width: 1000px){
+    header a img{
+        width: 35px;
+        height: auto;
+        margin-left: 50px;
+        right: 5px;
+    }
+    #compra{
+        margin-right: 30px;
+    }
+    header a:hover img{
+        width: 50px;
+    }
+}
+#compra{
+    right: 25px;
+}
+nav{
+    height: 100px;
+    width: 100%;
+}
+nav ul li{
+    padding: 7px 7px;
+    position: relative;
+}
+nav ul li a{
+    padding: 12px 0;
+    display: block;
+}
+/*** FONDO / BORDES /COLORES/ TEXTO ***/
+header{
+    background-image: url(imagenes/inicio/bannerJardin.jpg);
+}
+header nav a img{
+    background-color:rgb(0,0,0,50%);
+    border-radius: 5px;
+}
+header nav a img{
+    margin-top: 10px;
+    margin-right: 0px;
+}
+#compra{
+    margin-right: 40px;
+}
+nav{
+    background-color:rgb(0,0,0,50%);
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 40px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    
+}
+nav a:active, a:hover, a:focus{
+    background-color: rgb(0,0,0,50%);
+    color: #20fff2;
+    font-style: none;
+    transition: .5s;
+}
+/**Items desplegables**/
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:rgb(0,0,0,50%);
+    border-radius: 5px;
+    padding:0;
+}   
+#menu ul ul li {
+    width:90%;
+    left: 0;
+    top: 0;
+}    
+#menu ul ul a {
+    line-height:100%;
+    padding:15px 10px;
+}
+#menu ul li:hover > ul {
+    display:block;
+}
+/***********************************************************************************************************************************/
+/*******Menu Responsive*******/
+#checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 28%;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*****TABLET*****/
+@media (max-width: 1345px){
+    nav ul li a{
+        font-size: 70%;
+    }
+    header a:hover img{
+        width: 4%;
+        height: auto;
+    }
+}
+/*****MOVIL*****/
+@media (max-width: 1064px){
+    #checkbtn{
+        border: 4px solid black;        
+        width: 80px;
+        background-color:rgb(0,0,0,50%);
+        height: 100px;
+        padding-top: 7px;
+        margin-right: 0px;
+        display: block;
+    }
+    header nav a img{
+        margin-right: 90px;
+    }
+    #compra{
+        margin-right: 130px;
+    }
+    header nav a:hover img{
+        width: 10%;
+    }
+    nav{
+        display: block;
+    }
+    nav > ul{
+        position: absolute;
+        width: 100%;
+        height: 480px;
+        background-color:rgb(0,0,0,80%);
+        top: 100px;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+        display: none;
+    }
+    nav > ul li{
+        left: 40%;
+        min-width: 150px;
+        display: block;
+        margin-bottom: 5px;
+        line-height: 45px;
+        width: 20%;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover, li a.active{
+        background: none;
+    }
+    /*Submenú Ocultar*/
+    nav ul li ul li{
+        display: none;
+    }
+    #check:checked ~ ul{
+        display: block;
+    }
+}
+@media (max-width: 415px){
+    header a img{
+        width: 30px;
+        height: auto;
+        margin-right: 25%;
+        margin-top: 300px;
+    }
+    #compra{
+        margin-right: 30%;
+    }
+}
+
+/***********************************************************************************************************************************/
+
+/******************** LAYOUT/PLANTILLA ÚLTIMAS NOTICIAS  ********************/
+/*** Display/Position/Float ***/
+#noticias{
+    text-align: center;      
+    position: relative;
+    height: 350px;
+    background-color: black;
+    color: white;   
+    transition: all .5s;
+}
+#correo{
+    position: relative;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 15px;
+    width: 40%;
+    left: 25%;
+    text-align: left;
+}
+#noticias h3{   
+    padding-top: 55px;
+    font-size: 60px;
+    padding-bottom: 15px;
+    transition: all .5s;
+}
+#noticias p{
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+#formulario{
+    padding-top: 10px;
+    border: 2px solid white;   
+    border-right: none;
+    width: 50vw;
+}
+#noticias article{
+    width: 50vw;
+    margin-left: 25%;
+}
+#noticias a{
+    float: right;
+    width: 120px;
+    height: 52px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding-top: 12px;
+    border: 2px solid white;
+}
+#noticias a:hover{
+    background-color: black;
+    color: lightgreen;
+    border-left: none;
+}
+@media (max-width: 780px){
+    #noticias article{
+        width: 60vw;
+        height: 20px;
+    }
+    #noticias{
+        transition: all .5s;
+        height: 400px;
+    }
+    #noticias h3{
+        transition: all .5s;
+        font-size: 50px;
+    }
+    #noticias p{
+        font-size: 17px;
+        padding-bottom: 17px;
+        margin: 15px 50px;
+    }
+    #noticias article p{
+        margin: 0px 0px;
+    }
+    #noticias article{
+        width: 65vw;
+        margin-left: 20%;
+    }
+    #formulario{
+        width: auto;
+        font-size: 15px;
+        padding-top: 6px;
+        height: auto;
+    }
+    #noticias a{
+        font-size: 13px;
+        width: 80px;
+        height: 47px;
+    }
+    #correo{
+        left: 15%;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 540px){
+    #noticias{
+        transition: all .5s;
+        height: 350px;
+    }
+    #noticias h3{
+        transition: all .5s;
+        font-size: 40px;
+    }
+    #noticias p{
+        font-size: 14px;
+        padding: 0px 15px;
+        margin-bottom: 20px;
+    }
+    #noticias article{
+        width: 60vw;
+    }
+    #formulario{
+        width: 50vw;
+        height: 36px;
+        padding-top: 50px;
+    }
+    #noticias a{
+        font-size: 14px;
+        padding-top: 8px;
+        height: 36px;
+        width: 70px;
+    }
+    #correo{
+        left: 10%;
+    }
+}
+/******************** LAYOUT/PLANTILLA SECCIÓN PLANTAS  ********************/
+/*** Position and size ***/ 
+.seccion{
+    position: relative;
+    padding-bottom: 50px;
+}
+.seccion h2{
+    position: relative;
+    left: 6%;
+    top: 10px;
+    width: 13%;
+    padding-bottom: 10px;
+}
+.seccion p{
+    position: absolute;
+}
+.seccion a{
+    color: black;
+    position: absolute;
+    left: 1100px;
+    top: 60px;
+}
+    /**Imagenes**/
+.seccion div{
+    width: 90vw;
+    margin-left: 5%;
+    right: 3%;
+}
+.seccion img{
+    width: 360PX;
+    height: auto;
+}
+.producto{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    width: 19%;
+}
+/* #iconoPlanta{ */
+.icono{
+    top: 20px;
+    position: absolute;
+    right: 2%;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+}
+ /*Texto*/
+ .seccion ul {
+    position: absolute;
+    width: 67%;
+    top: 325px;
+    text-align: left;
+    width: 90vw;
+    left: 7%;
+}
+.seccion ul li{
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-right: 139px;
+}
+.seccion a:link, a:visited{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seccion a:hover{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    background: none;
+}
+
+
+/**Responsive**/
+@media (max-width: 1610px){
+    .seccion div{
+        text-align: center;
+    }
+    .seccion ul{
+        text-align: center;
+    }
+    #iconoPlanta{
+        float: right;
+        width: 70px;
+        height: auto;
+        margin-right: 230px;
+    }
+    .seccion a{
+        position: relative;
+        float: right;
+        margin-right: 150px;
+        left: 0;
+    }
+}
+@media (max-width: 1245px){
+    .seccion div{
+        width: 80vw;
+        margin-left: 10%;
+    }
+    .producto{
+        margin-bottom: 20px;
+    }
+    .seccion ul{
+        width: 82vw;
+        margin-left: 3%;
+    }
+    .seccion ul li{
+        padding: 0;
+        padding-bottom: 200px;
+        margin-left: 45px;
+        margin-right: 100px;
+    }
+}
+@media (max-width: 925px){
+    .producto{
+        margin-right: 10px;
+    }
+    .seccion ul{
+        width: 80vw;
+    }
+    .seccion ul li{
+        margin-left: 13%;
+        padding-top: 2px;
+    }
+}
+@media (max-width: 890px){
+    .producto{
+        margin: 50px 0;
+    }
+    .seccion ul{
+        text-align: center;
+        width: 80vw;
+        height: 70%;
+        margin: 0;
+        margin-left: 3%;
+        margin-top: 70px;
+        padding: 0;
+    }
+    .seccion ul li{
+        padding-bottom: 0px;
+        margin-left: 15%;
+        margin-top: 0px;
+        margin-bottom: 300px;
+    }
+}
+@media (max-width: 823px){
+    .seccion div{
+        text-align: center;
+    }
+    .seccion ul{
+        text-align: center;
+    }
+}
+@media (max-width: 740px){
+    .seccion h2{
+        left: 10px;
+    }
+    #iconoPlanta{
+        float: left;
+        width: 70px;
+        height: auto;
+        left: 270px;
+    }
+    .seccion a{
+        left: 350px;
+        position: absolute;
+        margin: 0;
+    }
+}
+@media (max-width: 605px){
+    .seccion div{
+        margin-left: 40px;
+    }
+    .seccion ul{
+        margin-left: 0px;
+    }
+    .seccion ul li{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/*** FONDO / BORDES /COLORES/ TEXTO ***/
+body h2{
+    font-size: 75px;
+    font-style: italic;
+    color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 5px 1px rgb(197, 197, 197);
+}
+
+body h4{
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 5px 1px rgb(197, 197, 197);
+}
+
+/*** DETALLES AJUSTES ***/
+
+#iconoDecoracion{
+    width: 26%;
+    height: auto;
+    top: 60px;
+    position: absolute;
+    right: 5%;
+    border: 5px double black;
+}
+#productosDecoracion{
+    position: absolute;
+    width: 67%;
+    margin-left: 7%;
+    top: 325px;
+}
+#productosDecoracion li{
+    display: inline-block;
+    margin-left: 6%;
+    margin-right: 9%;
+}
+/*** BANNERS ***/
+#bannerPlanta{
+    z-index: 1;
+    position: relative;
+    background-color: rgba(51,51,51);
+    height: 700px;
+}
+#bannerPlanta img{   
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin: 24px 0;
+    margin-left: 7%;
+}
+#fondoGris{
+    z-index: -1;
+    position: absolute;
+    left: 25%;
+    height: 699px;
+    width: 50%;
+    background-color: rgba(102,102,102);
+}
+#bannerPlanta article{
+    color: white;
+    position: absolute;
+    right: 7%;
+    background-color: black;
+    height: 550px;
+    width: 50%;
+    top: 70px;
+    font-size: 30px;
+}
+#textoBanner{
+    color: #e7ffff;
+    position: absolute;
+    right: 21%;
+    height: 150px;
+    width: 49%;
+    top: 250px;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1;
+}
+#bannerPlanta h5{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    left: 29%;
+    height: 150px;
+    width: 40%;
+    top: 100px;
+    
+}
+body h5{
+    font-size: 60px;
+}
+#bannerTerraza{
+    position: relative;
+    width: 100%;
+}
+/******************** LAYOUT/PLANTILLA SECCIÓN COMPLEMENTOS  ********************/
+.productoComplemento{
+    position: relative;
+    left: 6%;
+    margin-right: 20px;
+}
+#listaComplementos{
+    position: absolute;
+    width: 67%;
+    margin-left: 6%;
+    top: 330px;
+}
+#listaComplementos li{
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 3%;
+}
+#riego {
+    padding-left: 7%;
+}
+/******************** LAYOUT/PLANTILLA FOOTER  ********************/
+footer{
+    background-color: black;
+    color: white;
+    border-top: 15px double white;
+    border-bottom: 15px double white;
+    height: 300px;
+    position: relative;
+    font-size: 20px;
+}
+footer h1{
+    position: absolute;
+    left: 45%;
+    top: 70px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer h6{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+footer article{
+    margin-top: 20px;
+}
+#infoFooter{
+    position: absolute;
+    left: 25%;
+}
+#infoFooter ul{
+    position: relative;
+}
+footer article ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+footer article a:link, a:visited{
+    text-decoration: none;
+}
+footer article a:hover{
+    text-decoration: underline;
+}
+footer img{
+    position: relative;
+    width: 30px;
+    height: auto;
+    margin-top: 0;
+}
+footer p{
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+}
+#redes{
+    position: absolute;
+    right: 25%;
+}
+#redes > a{
+    margin-bottom: 30px;
+}
+#redes ul{
+    position: absolute;
+    margin-top: 45px;
+    width: 100%;
+}
+#redes ul li{
+    height: 50px;
+    display: inline-block;
+    margin-right: 9%;
+    margin-left: 8%;
+}
