@@ -437,34 +437,6 @@ nav a:active, a:hover, a:focus{
     background: none;
 }
 
-/**Responsive**/
-@media (max-width: 840px){
-    body h2{
-        font-size: 5px;
-    }
-    .seccion a{
-        font-size: 20px;
-        position: absolute;
-        right: auto;
-        left: 330px;
-        border: 1px solid red;
-    }
-}
-
-/**Responsive**/
-@media (max-width: 570px){
-    .producto{
-        /* width: 18vw; */
-        width: 90px;
-    }
-    .seccion ul li{
-        margin-left: 35px;
-    }
-    .icono{
-        width: 100px;
-        top: 90px;
-    }
-}
 
 /*** FONDO / BORDES /COLORES/ TEXTO ***/
 body h2{
@@ -479,6 +451,17 @@ body h4{
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 5px 1px rgb(197, 197, 197);
+}
+/**Responsive**/
+@media (max-width: 840px){
+    body h2{
+        font-size: 5vw;
+    }
+    .seccion a{
+        top: 30px;
+        font-size: 2vw;
+        margin-left: 40%;
+    }
 }
 
 /*** BANNERS ***/
