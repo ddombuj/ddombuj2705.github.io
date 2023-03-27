@@ -199,12 +199,12 @@ nav a:active, a:hover, a:focus{
         display: none;
     }
     nav > ul li{
-        left: 40%;
+        left: 0;
         min-width: 150px;
         display: block;
         margin-bottom: 5px;
         line-height: 45px;
-        width: 20%;
+        width: 100%;
     }
     nav ul li a{
         font-size: 20px;
@@ -437,6 +437,33 @@ nav a:active, a:hover, a:focus{
     background: none;
 }
 
+/**Responsive**/
+@media (max-width: 840px){
+    body h2{
+        font-size: 5px;
+    }
+    .seccion a{
+        font-size: 20px;
+        position: absolute;
+        right: auto;
+        left: 330px;
+    }
+}
+
+/**Responsive**/
+@media (max-width: 570px){
+    .producto{
+        /* width: 18vw; */
+        width: 90px;
+    }
+    .seccion ul li{
+        margin-left: 35px;
+    }
+    .icono{
+        width: 100px;
+        top: 90px;
+    }
+}
 
 /*** FONDO / BORDES /COLORES/ TEXTO ***/
 body h2{
@@ -451,17 +478,6 @@ body h4{
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 5px 1px rgb(197, 197, 197);
-}
-/**Responsive**/
-@media (max-width: 840px){
-    body h2{
-        font-size: 5vw;
-    }
-    .seccion a{
-        top: 30px;
-        font-size: 2vw;
-        margin-left: 40%;
-    }
 }
 
 /*** BANNERS ***/
@@ -580,6 +596,10 @@ footer article{
     position: relative;
     width: 25vw;
     left: 5vw;
+    z-index: 1;
+}
+#infoFooter a:hover{
+    text-decoration: underline;
 }
 footer article ul li{
     list-style: none;
