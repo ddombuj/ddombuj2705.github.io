@@ -447,6 +447,7 @@ nav a:active, a:hover, a:focus{
         position: absolute;
         right: auto;
         left: 330px;
+        border: 1px solid red;
     }
 }
 
