@@ -9,205 +9,261 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     </head>
     <body>
-        <div id="contraste">
             <!--Encabezado-->
-            <header>
-                <!--Menu hamburguesa-->
-                <nav id="menu">
-                    <input type = "checkbox" id="check">
-                    <label for="check" id="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <ul>
-                        <li><a href="../index.html" id="active">Inicio</a></li>
-                        <li>
-                            <a href="">Plantas</a>
-                            <ul>
-                                <li><a href="">Interior</a></li>
-                                <li><a href="">Exterior</a></li>
-                                <li><a href="">Frutales</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Decoración</a>
-                            <ul>
-                                <li><a href="">Macetas</a></li>
-                                <li><a href="">Cestas</a></li>
-                                <li><a href="">Adornos</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Complementos</a>
-                            <ul>
-                                <li><a href="">Herramientas</a></li>
-                                <li><a href="">Fertilizantes</a></li>
-                                <li><a href="">Riego</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Información</a>
-                            <ul>
-                                <li><a href="">Localización</a></li>
-                                <li><a href="">Trayectoria</a></li>
-                                <li><a href="">Contacto</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="../index.html"><img src="../imagenes/logotipo2.png" alt="" id="logo"></a>
-                <a href=""><img src="../imagenes/seccion_Plantas/imagenJardineroSesion" alt=""></a>
-                <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+        <header>
+            <div class="blurHeader"></div>
+            <!--Menu hamburguesa-->
+            <nav id="menu">
+                <input type = "checkbox" id="check">
+                <label for="check" id="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="../index.html" class="titulo">Inicio</a></li>
+                            <li id="actual"><a href="" class="titulo">Plantas</a></li> 
+                            <li><a href="#interior">Interior</a></li>
+                            <li><a href="#Exterior">Exterior</a></li>
+                            <li><a href="#frutales">Frutales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Decoración</a></li>
+                            <li><a href="">Macetas</a></li>
+                            <li><a href="">Cestas</a></li>
+                            <li><a href="">Adornos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Complementos</a></li>
+                            <li><a href="">Herramientas</a></li>
+                            <li><a href="">Fertilizantes</a></li>
+                            <li><a href="">Riego</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Información</a></li>
+                            <li><a href="">Localización</a></li>
+                            <li><a href="">Trayectoria</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html"><img src="../imagenes/logotipo2.png" alt="" id="logo"></a>
+            <a href="formulario.html"><img src="../imagenes/seccion_Plantas/imagenJardineroSesion" alt="" id="registroImagen"></a>
+            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt="" id="compraImagen"></a>
 
-                <!--Texto referente a la seccion-->
-                <div>
-                    <h1>Mostrando resultados referentes a <b>"Plantas"</b></h1>
+            <!--Texto referente a la seccion-->
+            <div>
+                <h1>Mostrando resultados referentes a "Plantas"</h1>
+                <section id="enlacesHeader">
                     <a href="">interior</a>
                     <a href="">exterior</a>
                     <a href="">frutales</a>
-                </div>
-            </header>
-            <main>
-                <!--Filas de productos-->
-                <!--Primera fila-->
-                <section>
-                    <!--Articulos individuales-->
-                    <article>
-                        <a href="">
-                            <img src="" alt="">
-                            <h3>Titulo Producto</h3>
-                            <p>Breve Descripción</p>
-                            <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
-                        <a href="">
-                            <img src="" alt="">
-                            <h3>Titulo Producto</h3>
-                            <p>Breve Descripción</p>
-                            <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
-                        <a href="">
-                            <img src="" alt="">
-                            <h3>Titulo Producto</h3>
-                            <p>Breve Descripción</p>
-                            <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
-                        <a href="">
-                            <img src="" alt="">
-                            <h3>Titulo Producto</h3>
-                            <p>Breve Descripción</p>
-                            <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
                 </section>
-                <!--Segunda fila-->
-                <section>
-                    <!--Articulos individuales-->
-                    <article>
+            </div>
+        </header>
+        <main>
+            <!--Filas de productos-->
+            <!--Primera fila-->
+            <h2 id="interior">Interior</h2>
+            <section>
+                <ul>
+                    <!--Articulo4-->
+                    <li>
                         <a href="">
-                            <img src="" alt="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas interior//7.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
                             <h3>Titulo Producto</h3>
                             <p>Breve Descripción</p>
                             <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo5-->
+                    <li>
                         <a href="">
-                            <img src="" alt="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas interior//8.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
                             <h3>Titulo Producto</h3>
                             <p>Breve Descripción</p>
                             <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo6-->
+                    <li>
                         <a href="">
-                            <img src="" alt="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas interior//11.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
                             <h3>Titulo Producto</h3>
                             <p>Breve Descripción</p>
                             <p class="precio">10.99€</p>
-                        </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                    <!--Articulo-->
-                    <article>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!--Segunda fila-->
+            <h2 id="Exterior">Exterior</h2>
+            <section>
+                <ul>
+                    <!--Articulo4-->
+                    <li>
                         <a href="">
-                            <img src="" alt="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas exterior/1.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
                             <h3>Titulo Producto</h3>
                             <p>Breve Descripción</p>
                             <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo5-->
+                    <li>
+                        <a href="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas exterior/2.png" alt="">
                         </a>
-                        <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
-                    </article>
-                </section>
+                        <article class="informacionProducto">
+                            <h3>Titulo Producto</h3>
+                            <p>Breve Descripción</p>
+                            <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo6-->
+                    <li>
+                        <a href="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/plantas exterior/3.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
+                            <h3>Titulo Producto</h3>
+                            <p>Breve Descripción</p>
+                            <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!--Tercera fila-->
+            <h2 id="frutales">Frutales</h2>
+            <section>
+                <ul>
+                    <!--Articulo7-->
+                    <li>
+                        <a href="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/frutales/1.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
+                            <h3>Titulo Producto</h3>
+                            <p>Breve Descripción</p>
+                            <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo8-->
+                    <li>
+                        <a href="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/frutales/2.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
+                            <h3>Titulo Producto</h3>
+                            <p>Breve Descripción</p>
+                            <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                    <!--Articulo9-->
+                    <li>
+                        <a href="">
+                            <div class="blur"></div>
+                            <img class="productoImg" src="../imagenes/frutales/3.png" alt="">
+                        </a>
+                        <article class="informacionProducto">
+                            <h3>Titulo Producto</h3>
+                            <p>Breve Descripción</p>
+                            <p class="precio">10.99€</p>
+                            <a href=""><img src="../imagenes/seccion_Plantas/carrito" alt=""></a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
 
-
-                <!--Otras categorías-->
-                <section>
-                    <article>
-                        <a href="">
-                            <img src="" alt="">
-                            <p>Categoría</p>
-                            <h4>Plantas de interior</h4>
-                            <img src="../imagenes/seccion_Plantas/flecha.png" alt="">
-                        </a>
-                    </article>
-                    <article>
-                        <a href=""><img src="" alt=""></a>
-                        <p>Categoría</p>
-                        <h4>Plantas de exterior</h4>
-                        <img src="../imagenes/seccion_Plantas/flecha.png" alt="">
-                    </article>
-                    <article>
-                        <a href=""><img src="" alt=""></a>
-                        <p>Categoría</p>
-                        <h4>Plantas frutales</h4>
-                        <img src="../imagenes/seccion_Plantas/flecha.png" alt="">
-                    </article>
-                </section>
-
-            
-            
-            </main>
-        </div>
+            <!--Otras categorías-->
+            <section id="otrasCategorias">
+                <h2>Categorías Destacadas</h2>
+                <article>
+                    <a href="">
+                        <img class="imgCategorias" src="../imagenes/adornos/2.png" alt="">
+                        <p>Adornos</p>
+                        <h4>Seccion: 'Decoración'</h4>
+                        <img class="flechaImg" src="../imagenes/seccion_Plantas/flecha.png" alt="">
+                    </a>
+                </article>
+                <article>
+                    <a href="">
+                        <img class="imgCategorias" src="../imagenes/riegos/2.png" alt="">
+                        <p>Riego</p>
+                        <h4>Seccion: 'Complementos'</h4>
+                        <img class="flechaImg" src="../imagenes/seccion_Plantas/flecha.png" alt="">
+                    </a>
+                </article>
+                <article>
+                    <a href="">
+                        <img class="imgCategorias" src="../imagenes/cestas/1.png" alt="">
+                        <p>Cestas</p>
+                        <h4>Seccion: 'Decoración'</h4>
+                        <img class="flechaImg" src="../imagenes/seccion_Plantas/flecha.png" alt="">
+                    </a>
+                </article>
+            </section><!--Fin otras categorias-->
+        </main>
+        <!--Footer-->
+        <footer>
+            <div>
+                <article id="registroFooter">
+                    <h5>Entra en el Jardín</h5>
+                    <p>Empieza a disfrutar de descuentos especiales.</p>
+                    <a href="">Unirse o iniciar sesión</a>
+                </article>
+                <article id="infoFooter">            
+                    <h5>Conócenos</h5>
+                    <ul>
+                        <li><a href="">Encuentra tu tienda</a> </li>
+                        <li><a href="">¿Quiénes somos?</a></li>
+                        <li><a href="">¿Hacemos envíos a todo el mundo?</a></li>
+                    </ul>
+                </article>
+                <article id="redes">
+                    <h5>Contáctanos</h5>
+                    <ul>
+                        <li id="instagram"><a href=""><img src="../imagenes/inicio/iconoInstagram.png" alt=""></a></li>   
+                        <li id="twitter"><a href=""><img src="../imagenes/inicio/iconoTwitter.png" alt=""></a></li>
+                        <li id="facebook"><a href=""><img src="../imagenes/inicio/iconoFacebook.png" alt=""></a></li>
+                        <li><a href=""><img src="../imagenes/inicio/visa.png" alt=""></a></li>
+                        <li><a href=""><img src="../imagenes/inicio/master-card.png" alt=""></a></li>
+                        <li><a href="">eljardinsecreto@gmail.com</a></li>
+                    </ul>
+                </article>
+            </div>
+            <p>© el-jardin-secreto 2022-2023 </p>
+        </footer>
     </body>
-    <!--Footer-->
-    <article>
-        <h5>Entra en el Jardín</h5>
-        <p>Empieza a disfrutar de descuentos especiales y otras ventajas.</p>
-        <a href="">Unirse o iniciar sesión</a>
-    </article>
-    <article id="infoFooter">            
-        <h5>Conócenos</h5>
-        <ul>
-            <li><a href="">Encuentra tu tienda</a> </li>
-            <li><a href="">¿Quiénes somos?</a></li>
-            <li><a href="">¿Hacemos envíos a todo el mundo?</a></li>
-        </ul>
-    </article>
-    <article id="redes">
-        <ul>
-            <li id="instagram"><a href=""><img src="../imagenes/inicio/iconoInstagram.png" alt=""></a></li>   
-            <li id="twitter"><a href=""><img src="../imagenes/inicio/iconoTwitter.png" alt=""></a></li>
-            <li id="facebook"><a href=""><img src="../imagenes/inicio/iconoFacebook.png" alt=""></a></li>
-            <li>tarjeta</li>
-            <li>tarjeta</li>
-            <li><a href="">eljardinsecreto@gmail.com</a></li>
-        </ul>
-    </article>
-    <p>© el-jardin-secreto 2022 </p>
 </html>
