@@ -3,29 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../imagenes/inicio/dtbg);
+}
 /****Header****/
 header{
     position: relative;
     border-bottom: 2px solid black;
     width: 100%;
     height: auto;
-    background-image: url(../imagenes/seccion_Plantas/fondoHeader3.png);
-    background-size: 20%;
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    box-shadow: 0px 25px 50px 5px rgb(0, 255, 13, 0.5);
-    margin-bottom: 90px
+    margin-bottom: 90px;
+    background: linear-gradient(to bottom, #00c99dc9, #00c4aaaf);
 }
-.blurHeader {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: 0;
-}
+
 /***********************************************************************************************************************************/
 /*******Menu Hamburguesa*******/
 #check:not(:checked) ~ ul{
@@ -34,7 +27,7 @@ header{
     transition: all .5s;
 }
 #check:checked ~ #checkbtn{
-    background-color: rgb(0, 255, 13, 0.247);
+    background-color: rgb(0, 255, 221, 0.247);
 }
 #check{
     display: none;
@@ -54,7 +47,7 @@ header{
     width: 50px;
 }
 #checkbtn:hover{
-    background-color: rgb(0, 255, 13, 0.247);
+    background-color: rgb(0, 255, 221, 0.247);
 }
 #check:checked ~ ul{
     display: block;
@@ -69,17 +62,18 @@ nav > ul{
     display: none;
     position: absolute;
     border: 1px solid black;
-    box-shadow: 5px 10px 2px 7px rgba(0, 255, 34, 0.2);
+    box-shadow: 5px 10px 2px 7px rgba(0, 255, 221, 0.2);
     transition: all .5s;
     margin-top: 25px;    
     z-index: 2;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(255, 255, 255, 0.849);
 }
 nav > ul li{
     text-align: center;
     margin-bottom: 10px;
 }
+
 /*Texto menu general*/
 nav ul li a{
     text-decoration: none;
@@ -88,7 +82,7 @@ nav ul li a{
     margin-top: 3px;
 }
 nav ul li ul li:hover{
-    background-color: rgba(0, 255, 13, 0.479);
+    background-color: rgba(0, 255, 221, 0.479);
 }
 /*Texto menu titulos*/
 .titulo{
@@ -96,7 +90,7 @@ nav ul li ul li:hover{
     font-weight: bold;
 }
 #actual{
-    background-color: rgb(0, 255, 13);
+    background-color: rgba(0, 255, 221, 0.479);
 }
 #logo{
     position: absolute;
@@ -176,7 +170,8 @@ main h2{
     margin-left: 30px;
     margin-right: 15px;
     margin-bottom: 1vw;
-    border-bottom: 3px solid black;
+    color: #ddd;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 /*SECCIONES DE PRODUCTOS POR FILAS*/
 main section{
@@ -186,6 +181,8 @@ main section{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
+    padding-top: 1.5%;
+    background-color: #dddddd9a;
     box-shadow: 0 0 15px #ddd;
 
     object-fit: cover;
@@ -194,14 +191,16 @@ main section ul{
     list-style: none;
 }
 main section ul li{
-    border: 1px solid rgba(59, 59, 59, 0.5);
+    border: 5px solid rgba(59, 59, 59, 0.5);
     box-shadow: 0 0 15px #ddd;
     position: relative;
 
-    background-image: url(/PaginaWeb/imagenes/seccion_Plantas/fondoProducto2.jpg);
+    /* background-image: url(/PaginaWeb/imagenes/seccion_Plantas/fondoProducto2.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+
+    background: linear-gradient(to bottom, #008568, #00a58f);
     
     height: 85%;
     width: 90%;
@@ -276,10 +275,9 @@ main section ul li{
 #otrasCategorias{
     columns: 100px 3;
     column-gap: 20px;
-    width: 90%;
-    margin-left: 5%;
     height: auto;
     position: relative;
+    background-color: #ddd;
 
 }
 #otrasCategorias article{
@@ -328,7 +326,7 @@ main section ul li{
 
 footer{
     position: relative;
-    background-color: #e9e9e9;
+    background: linear-gradient(to top, #00c99dc5, #00c4aaa6);
     
     margin-top: 3%;
     width: 100%;
@@ -361,7 +359,7 @@ footer article a{
 }
 footer article a:hover{
     text-decoration: underline;
-    color: #14a39c;
+    color: #04201f;
 }
 footer article ul{
     list-style: none;
@@ -385,9 +383,23 @@ footer article ul{
 footer > p{
     position: absolute;
     font-size: 1vw;
+    font-weight: bold;
     width: 20%;
     height: 20px;
     bottom: 10px;
     left: 10px;
 }
+
+@media(max-width: 520px){
+    main section{
+        width: 80%;
+        columns: 29% 3;
+        column-gap: 5%;
+    }
+    main section ul li{
+        width: 100px;
+        margin: 5%;
+    }
+}
+
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "../estilos/RegisterStyle.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+    <title>Registro</title>
+</head>
+<body>
+        <!--Encabezado-->
+        <header>
+            <div class="blurFondo"></div>
+            <!--Menu hamburguesa-->
+            <nav id="menu">
+                <input type = "checkbox" id="check">
+                <label for="check" id="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul id="menuDesplegable">
+                    <li>
+                        <ul>
+                            <li><a href="../index.html" class="titulo">Inicio</a></li>
+                            <li><a href="Plantas.html" class="titulo">Plantas</a></li> 
+                            <li><a href="Plantas.html#Interior">Interior</a></li>
+                            <li><a href="Plantas.html#Exterior">Exterior</a></li>
+                            <li><a href="Plantas.html#frutales">Frutales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Decoración</a></li>
+                            <li><a href="Decoracion.html#Interior">Macetas</a></li>
+                            <li><a href="Decoracion.html#Exterior">Cestas</a></li>
+                            <li><a href="Decoracion.html#frutales">Adornos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Complementos</a></li>
+                            <li><a href="Complemento.html#Interior">Herramientas</a></li>
+                            <li><a href="Complemento.html#Exterior">Fertilizantes</a></li>
+                            <li><a href="Complemento.html#frutales">Riego</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="../paginas/Informacion.html" class="titulo">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html"><img src="../imagenes/logotipo2.png" alt="" id="logo"></a>
+        </header>
+        <main>
+            <form id="form-login" autocomplete="off" novalidate>
+                <h5>Registro</h5>
+                <input class="controls" id="nombre" type="text" name="nombre" value="" placeholder="Nombre" required>
+                <input class="controls" id="apellido" type="text" name="apellido" value="" placeholder="Apellido" required>
+                <input class="controls" id="correo" type="email" name="correo" value="" placeholder="Correo" required>
+                <input class="controls" id="contrasena1" type="password" name="contrasena" placeholder="Contraseña" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" required>
+
+                <div id="validacion-contrasena">
+                    <ul>
+                        <li id="letter" class="invalid">Al menos <strong>2 letras minúsculas</strong></li>
+                        <li id="capital" class="invalid">Al menos <strong>2 letras mayúsculas</strong></li>
+                        <li id="number" class="invalid">Al menos <strong>2 números</strong></li>
+                        <li id="special" class="invalid">Al menos <strong>1 caracter especial (#$@!%&*?)</strong></li>
+                        <li id="length" class="invalid">Debe contener entre <strong>8-16 carácteres</strong></li>
+                    </ul>
+                </div>
+
+                <input class="controls" id="contrasena2" type="password" name="contrasenaConfirmacion" placeholder="Confirmar contraseña" required>
+                <input id = "terminos" type="checkbox" name="terminos" required title="Debe aceptar los términos y condiciones para continuar"> <label for="terminos">Acepto los <a href="">términos y condiciones</a></label>
+                <input class="buttons" type="submit" name="registro" value="Registrar" onclick="verificar()">
+                <p><a href="formLogin.html">Ya tengo cuenta</a></p>
+            </form>
+        </main>
+        <footer>
+            <p>&#169 el-jardin-secreto 2022-2023 </p>
+        </footer>
+        <script src="../Validacion/FormValPassword1.js"></script>
+        <script src="../Validacion/FormValPassword2.js"></script>
+</body>
+</html>

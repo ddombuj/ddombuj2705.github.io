@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "../estilos/LoginStyle.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+        <!--Encabezado-->
+        <header>
+            <div class="blurFondo"></div>
+            <!--Menu hamburguesa-->
+            <nav id="menu">
+                <input type = "checkbox" id="check">
+                <label for="check" id="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul id="menuDesplegable">
+                    <li>
+                        <ul>
+                            <li><a href="../index.html" class="titulo">Inicio</a></li>
+                            <li><a href="Plantas.html" class="titulo">Plantas</a></li> 
+                            <li><a href="Plantas.html#Interior">Interior</a></li>
+                            <li><a href="Plantas.html#Exterior">Exterior</a></li>
+                            <li><a href="Plantas.html#frutales">Frutales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Decoración</a></li>
+                            <li><a href="Decoracion.html#Interior">Macetas</a></li>
+                            <li><a href="Decoracion.html#Exterior">Cestas</a></li>
+                            <li><a href="Decoracion.html#frutales">Adornos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="" class="titulo">Complementos</a></li>
+                            <li><a href="Complemento.html#Interior">Herramientas</a></li>
+                            <li><a href="Complemento.html#Exterior">Fertilizantes</a></li>
+                            <li><a href="Complemento.html#frutales">Riego</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="../paginas/Informacion.html" class="titulo">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html"><img src="../imagenes/logotipo2.png" alt="" id="logo"></a>
+        </header>
+        <main>
+            <form id="form-login" autocomplete="off">
+                <h5>Login</h5>
+                <input class="controls" type="text" name="usuario" value="" placeholder="Usuario" required>
+                <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña" required>
+                <input class="buttons" type="submit" name="" value="Ingresar">
+                <p><a href="formRegister.html">¿No tienes cuenta?</a></p>
+            </form>
+        </main>
+        <footer>
+            <p>&#169 el-jardin-secreto 2022-2023 </p>
+        </footer>
+</body>
+</html>

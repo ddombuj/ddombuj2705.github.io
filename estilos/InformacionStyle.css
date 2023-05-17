@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../imagenes/inicio/dtbg);
+}
+/****Header****/
+header{
+    position: relative;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+    background: linear-gradient(to bottom, #00c99dc9, #00c4aaaf);
+}
+
+/***********************************************************************************************************************************/
+/*******Menu Hamburguesa*******/
+#check:not(:checked) ~ ul{
+    display: block;
+    left: -2150px;
+    transition: all .5s;
+}
+#check:checked ~ #checkbtn{
+    background-color: rgb(0, 255, 221, 0.247);
+}
+#check{
+    display: none;
+}
+#checkbtn{
+    font-size: 30px;
+    color: black;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    display: block;
+
+    text-align: center;
+    position: relative;
+    top: 20px;
+    padding-top: 8px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+#checkbtn:hover{
+    background-color: rgb(0, 255, 221, 0.247);
+}
+#check:checked ~ ul{
+    display: block;
+    left: 0;
+    transition: all .3s;
+}
+nav{
+    width: 50px;
+    transition: all .5s;
+}
+nav > ul{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    box-shadow: 5px 10px 2px 7px rgba(0, 255, 221, 0.2);
+    transition: all .5s;    
+    z-index: 2;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.849);
+}
+nav > ul li{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Texto menu general*/
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+}
+nav ul li ul li:hover{
+    background-color: rgba(0, 255, 221, 0.479);
+}
+/*Texto menu titulos*/
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+#actual{
+    background-color: rgba(0, 255, 221, 0.479);
+}
+
+#registroImagen{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    width: 50px;
+    height: auto;
+
+    border-radius: 50%;
+}
+#compraImagen{
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    width: 50px;
+    height: auto;
+
+    border-radius: 50%;
+}
+#compraImagen:hover{
+    box-shadow: 0 0 15px #000000;
+}
+#registroImagen:hover{
+    box-shadow: 0 0 15px #000000;
+}
+@media (max-width: 400px){
+    #compraImagen, #registroImagen{
+        width: 10%;
+    }
+    #logo{
+        width: 25%;
+        margin-left: -5%;
+    }
+}
+
+
+/************ MAIN ****************/
+body{
+    text-align: center;
+    transition: all 0.5s;
+}
+#logo{
+    position: relative;
+    height: auto;
+    width: 300px;
+    border-radius: 10%;
+    margin: auto;
+    margin-bottom: 100px;
+    box-shadow: 0 0 105px rgb(182, 255, 173);
+
+}
+#logo:hover{
+    animation: changeShadow 5s infinite;
+}
+@keyframes changeShadow {
+    0% {
+    box-shadow: 0 0 55px #ff0000;
+    }
+    25% {
+    box-shadow: 0 0 55px #00ff00;
+    }
+    50% {
+    box-shadow: 0 0 55px #0000ff;
+    }
+    75% {
+    box-shadow: 0 0 55px #ff00ff;
+    }
+    100% {
+    box-shadow: 0 0 55px #ffff00;
+    }
+}
+section{
+    position: relative;
+    display: flex;
+}
+
+.desplegable{
+    background: rgb(255, 229, 113);
+    width: 500px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+.desplegable h2{
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.desplegable .contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Ajusta el color de fondo del desplegable */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+
+    font-size: 20px;
+}
+
+.desplegable:hover .contenido {
+    display: block;
+}
+
+
+footer{
+    background: linear-gradient(to top, #00c99da9, #00c4aa6e);
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    margin-top: 150px;
+}
+footer p{
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
