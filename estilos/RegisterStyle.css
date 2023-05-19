@@ -228,11 +228,12 @@ main{
 
 footer{
     background: linear-gradient(to top, #00c99da9, #00c4aa6e);
-    position: absolute;
     bottom: 0;
     height: 50px;
     width: 100%;
     margin-top: 150px;
+    position:fixed;
+    left:0px;
 }
 footer p{
     position: absolute;
@@ -260,6 +261,12 @@ footer p{
         font-size: 4vw;
     }
     
+}
+/* 404 */
+@media(max-width: 404px){
+    html{
+        max-height: 90%;
+    }    
 }
 
 /******************************/
