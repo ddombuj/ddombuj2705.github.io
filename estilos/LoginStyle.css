@@ -209,10 +209,5 @@ footer p{
 @media(max-width: 404px){
     html{
         max-height: 90%;
-    }
-    footer {
-        position:fixed;
-        left:0px;
-    }
-    
+    }    
 }
